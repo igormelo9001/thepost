@@ -1,4 +1,4 @@
-package com.application.java.the.post;
+package com.post.application;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
