@@ -45,7 +45,7 @@ const PostForm = ({ onPostCreated }) => {
 
   return (
     <div className="post-form">
-      <h1>Criar um Post</h1>
+      <h1>Assuntos</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Título:</label>
