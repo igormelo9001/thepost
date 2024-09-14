@@ -18,7 +18,7 @@ const PostForm = ({ onPostCreated }) => {
     };
 
     try {
-      const response = await fetch('http://backend:80/posts/create', {
+      const response = await fetch('http://15.228.234.79:80/posts/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
