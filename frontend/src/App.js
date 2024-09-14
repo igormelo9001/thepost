@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     // Função para carregar posts (opcional, se você quiser carregar posts existentes)
     const fetchPosts = async () => {
-      const response = await fetch('http://backend:8080/posts');
+      const response = await fetch('http://localhost:8080/posts');
       const data = await response.json();
       setPosts(data);
     };
@@ -20,7 +20,7 @@ function App() {
 
   const handlePostCreated = async () => {
     // Atualiza a lista de posts após a criação
-    const response = await fetch('http://backend:8080/posts');
+    const response = await fetch('http://localhost:8080/posts');
     const data = await response.json();
     setPosts(data);
   };

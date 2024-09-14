@@ -8,12 +8,16 @@ services:
       - "8080:8080"
     networks:
       - app-network
-
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod  # Se quiser ativar algum perfil no Spring Boot
+    depends_on:
+      - frontend  # Certifique-se de que o frontend é inicializado antes (se necessário)
+    
   frontend:
     build:
       context: ./frontend
     ports:
-      - "3000:80"
+      - "3000:3000"  # Mapeamento direto da porta 3000
     networks:
       - app-network
 
