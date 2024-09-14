@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/application-0.0.1-SNAPSHOT.jar /app/application-0.0.1-SNAPSHOT.jar
 
 # Expondo a porta em que a aplicação vai rodar
-EXPOSE 8080
+EXPOSE 80
 
 # Comando para rodar a aplicação
 ENTRYPOINT ["java", "-jar", "application-0.0.1-SNAPSHOT.jar"]
